@@ -9,7 +9,7 @@
 <header>
     <h1>Desastres Naturales</h1>
     <p>Impacto, prevención y conciencia</p>
-    <img src="https://via.placeholder.com/800x200">
+    <img src="Imagen1.png">
 </header>
 
 <?php include("menu.php"); ?>

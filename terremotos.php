@@ -1,6 +1,6 @@
 <h2>Terremotos</h2>
 
-<img src="https://via.placeholder.com/600x200">
+<img src="Terremotos.png">
 
 <p>Los terremotos son movimientos bruscos...</p>
 <p>Estos fenómenos naturales pueden causar daños...</p>
