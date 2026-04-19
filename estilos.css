@@ -5,29 +5,51 @@
     box-sizing: border-box;
 }
 
+/* VARIABLES (colores modernos) */
+:root {
+    --primary: #6366f1;
+    --secondary: #4f46e5;
+    --accent: #22c55e;
+    --bg: #f1f5f9;
+    --card: #ffffff;
+    --text: #1e293b;
+}
+
 /* BODY */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #eef2f3, #dfe9f3);
-    color: #333;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(135deg, #e0e7ff, #f8fafc);
+    color: var(--text);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* ANIMACIÓN GLOBAL */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 /* HEADER */
 header {
-    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
     color: white;
     padding: 30px 20px;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    animation: slideDown 0.6s ease;
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
 }
 
 header h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+    font-size: 2.7em;
 }
 
 header img {
-    border-radius: 12px;
+    border-radius: 15px;
     margin-top: 15px;
 }
 
@@ -37,82 +59,112 @@ nav {
     justify-content: center;
     background: white;
     padding: 15px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 nav a {
-    color: #2c3e50;
-    margin: 0 15px;
+    color: var(--text);
+    margin: 0 10px;
     text-decoration: none;
     font-weight: 600;
-    padding: 8px 15px;
-    border-radius: 8px;
+    padding: 10px 18px;
+    border-radius: 10px;
     transition: 0.3s;
+    position: relative;
 }
 
+/* EFECTO HOVER MODERNO */
 nav a:hover {
-    background: #2a5298;
+    background: var(--primary);
     color: white;
+    transform: translateY(-2px);
 }
 
 /* CONTAINER */
 .container {
     display: flex;
     gap: 20px;
-    padding: 20px;
+    padding: 25px;
 }
 
-/* MAIN CONTENT */
+/* MAIN */
 .main {
     width: 70%;
-    background: white;
+    background: var(--card);
     padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    animation: fadeInUp 0.7s ease;
 }
 
 /* SIDEBAR */
-.sidebar img {
+.sidebar {
+    width: 30%;
+    background: var(--card);
+    padding: 20px;
+    border-radius: 20px;
+    height: 500px;
+    overflow-y: auto;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* ANIMACIÓN ENTRADA */
+@keyframes fadeInUp {
+    from {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* IMÁGENES GENERALES */
+img {
     width: 100%;
+    border-radius: 15px;
+    margin: 15px 0;
+    transition: 0.4s;
+}
+
+/* HOVER IMÁGENES */
+img:hover {
+    transform: scale(1.02);
+}
+
+/* IMÁGENES NOTICIAS */
+.sidebar img {
     height: 120px;
     object-fit: cover;
-    border-radius: 10px;
-    margin: 8px 0;
-    transition: 0.3s;
+    border-radius: 12px;
     cursor: pointer;
     transition: 0.3s;
 }
 
 .sidebar img:hover {
-    transform: scale(1.05);
-    opacity: 0.9;
+    transform: scale(1.07);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
-/* SCROLL BONITO */
+/* SCROLL */
 .sidebar::-webkit-scrollbar {
-    width: 8px;
+    width: 6px;
 }
 
 .sidebar::-webkit-scrollbar-thumb {
-    background: #2a5298;
+    background: var(--primary);
     border-radius: 10px;
-}
-
-/* IMÁGENES */
-img {
-    width: 100%;
-    border-radius: 12px;
-    margin: 15px 0;
 }
 
 /* TEXTOS */
 h2 {
     margin-bottom: 15px;
-    color: #1e3c72;
+    color: var(--secondary);
 }
 
 p {
-    line-height: 1.6;
+    line-height: 1.7;
     margin-bottom: 15px;
 }
 
@@ -121,17 +173,22 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin: 15px 0;
-}
-
-table th, table td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 table th {
-    background: #2a5298;
+    background: var(--primary);
     color: white;
+}
+
+table td, table th {
+    padding: 12px;
+    text-align: center;
+}
+
+table tr:nth-child(even) {
+    background: #f1f5f9;
 }
 
 /* LISTAS */
@@ -143,29 +200,38 @@ ul li {
     margin-bottom: 8px;
 }
 
-/* BOTONES (para formularios) */
-input[type="submit"] {
-    background: #2a5298;
+/* BOTONES */
+input[type="submit"], .btn-volver {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
     color: white;
     border: none;
-    padding: 10px 20px;
-    border-radius: 8px;
+    padding: 10px 18px;
+    border-radius: 10px;
     cursor: pointer;
+    font-weight: 600;
     transition: 0.3s;
 }
 
-input[type="submit"]:hover {
-    background: #1e3c72;
+/* HOVER BOTONES */
+input[type="submit"]:hover,
+.btn-volver:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 /* INPUTS */
 input, textarea {
     width: 100%;
     padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border-radius: 8px;
+    border-radius: 10px;
     border: 1px solid #ccc;
+    transition: 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: var(--primary);
+    outline: none;
+    box-shadow: 0 0 5px var(--primary);
 }
 
 /* RESPONSIVE */
@@ -179,18 +245,87 @@ input, textarea {
     }
 }
 
-.btn-volver {
-    display: inline-block;
-    background: #2a5298;
-    color: white;
-    padding: 10px 18px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 600;
+/* CONTENEDOR GENERAL OPINIONES */
+.opiniones-container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: var(--card);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    animation: fadeInUp 0.6s ease;
+}
+
+/* TARJETA DE CADA OPINIÓN */
+.opinion {
+    background: #f8fafc;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    border-left: 5px solid var(--primary);
     transition: 0.3s;
 }
 
-.btn-volver:hover {
-    background: #1e3c72;
-    transform: translateY(-2px);
+.opinion:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* NOMBRE */
+.opinion b {
+    color: var(--secondary);
+}
+
+/* FECHA */
+.opinion span {
+    font-size: 12px;
+    color: gray;
+}
+
+/* TEXTO */
+.opinion p {
+    margin-top: 8px;
+}
+
+/* MENSAJE DE GUARDADO */
+.mensaje-exito {
+    background: #dcfce7;
+    color: #166534;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    animation: fadeIn 0.5s ease;
+}
+
+/* MENSAJE ERROR */
+.mensaje-error {
+    background: #fee2e2;
+    color: #991b1b;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* BOTONES */
+.btn-link {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: white;
+    background: var(--primary);
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-link:hover {
+    background: var(--secondary);
+}
+hr {
+    border: none;
+    height: 1px;
+    background: #e2e8f0;
+    margin: 15px 0;
 }
