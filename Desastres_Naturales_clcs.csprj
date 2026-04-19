@@ -1,0 +1,15 @@
+
+<codestructure version="2.1.0">
+<phptree>
+<treenode node="conexion.php;PHP:PHP Include;1445847026;f9;1;21;1;;1711914571;f9;1;21;1;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="menu.php;PHP:PHP Include;924010357;f15;14;23;14;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="noticias.php;PHP:PHP Include;924010357;f15;30;27;30;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+</phptree>
+<jstree>
+</jstree>
+<pythontree>
+</pythontree>
+</codestructure>

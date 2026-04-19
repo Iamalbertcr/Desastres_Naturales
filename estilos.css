@@ -1,0 +1,174 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #eef2f3, #dfe9f3);
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header img {
+    border-radius: 12px;
+    margin-top: 15px;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: center;
+    background: white;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+nav a {
+    color: #2c3e50;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #2a5298;
+    color: white;
+}
+
+/* CONTAINER */
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* MAIN CONTENT */
+.main {
+    width: 70%;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 30%;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    height: 500px;
+    overflow-y: auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* SCROLL BONITO */
+.sidebar::-webkit-scrollbar {
+    width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: #2a5298;
+    border-radius: 10px;
+}
+
+/* IMÁGENES */
+img {
+    width: 100%;
+    border-radius: 12px;
+    margin: 15px 0;
+}
+
+/* TEXTOS */
+h2 {
+    margin-bottom: 15px;
+    color: #1e3c72;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* TABLAS */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background: #2a5298;
+    color: white;
+}
+
+/* LISTAS */
+ul {
+    margin: 15px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* BOTONES (para formularios) */
+input[type="submit"] {
+    background: #2a5298;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: #1e3c72;
+}
+
+/* INPUTS */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .main, .sidebar {
+        width: 100%;
+    }
+}
