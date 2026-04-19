@@ -1,4 +1,14 @@
-<?php include("estilos.css"); ?>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Inundaciones</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<div class="main">
+
 <h2>Terremoto en Japón</h2>
 
 <img src="Terremoto Japon.png">
@@ -32,3 +42,11 @@ La educación también juega un papel fundamental en la prevención. Desde edade
 <li>Identificar zonas seguras dentro del hogar</li>
 <li>Participar en simulacros</li>
 </ul>
+
+<br>
+<a href="index.php" class="btn-volver">← Volver al inicio</a>
+
+</div>
+
+</body>
+</html>

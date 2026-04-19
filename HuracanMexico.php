@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Inundaciones</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<div class="main">
+
 <h2>Huracán en México</h2>
 
 <img src="Huracan Mexico.jpg">
@@ -31,3 +42,11 @@ La prevención es fundamental para enfrentar los huracanes. Esto incluye asegura
 <li>Asegurar puertas y ventanas</li>
 <li>Seguir instrucciones oficiales</li>
 </ul>
+
+<br>
+<a href="index.php" class="btn-volver">← Volver al inicio</a>
+
+</div>
+
+</body>
+</html>

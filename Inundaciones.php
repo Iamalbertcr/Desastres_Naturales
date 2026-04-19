@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Inundaciones</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<div class="main">
+
 <h2>Inundaciones</h2>
 
 <img src="Inundaciones.jpg">
@@ -33,3 +44,11 @@ La prevención es clave para reducir el impacto de las inundaciones. Evitar la c
 <li>Identificar rutas de evacuación</li>
 <li>Preparar kit de emergencia</li>
 </ul>
+
+<br>
+<a href="index.php" class="btn-volver">← Volver al inicio</a>
+
+</div>
+
+</body>
+</html>

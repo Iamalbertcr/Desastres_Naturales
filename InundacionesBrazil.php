@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Inundaciones</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<div class="main">
+
+
 <h2>Inundaciones en Brasil</h2>
 
 <img src="Inundaciones Brazil.jpg">
@@ -31,3 +43,11 @@ La prevención incluye evitar la construcción en zonas de alto riesgo, mejorar 
 <li>Mantener drenajes limpios</li>
 <li>Tener rutas de evacuación</li>
 </ul>
+
+<br>
+<a href="index.php" class="btn-volver">← Volver al inicio</a>
+
+</div>
+
+</body>
+</html>

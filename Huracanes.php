@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Inundaciones</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<div class="main">
+
 <h2>Huracanes</h2>
 
 <img src="Huracanes.png">
@@ -33,3 +44,10 @@ La educación en prevención también juega un papel importante. Las comunidades
 <li>Almacenar agua y alimentos</li>
 <li>Seguir indicaciones de las autoridades</li>
 </ul>
+<br>
+<a href="index.php" class="btn-volver">← Volver al inicio</a>
+
+</div>
+
+</body>
+</html>
