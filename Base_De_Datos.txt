@@ -7,3 +7,6 @@ CREATE TABLE opiniones (
     fecha DATE,
     opinion TEXT
 );
+
+
+URL: http://localhost/desastres_naturales/index.php
